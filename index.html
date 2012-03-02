@@ -1,88 +1,108 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt-br"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt-br"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
 <head>
-  <meta charset='utf-8'>
-
-  <title>leobetosouza/LESS-hybrid-responsive-layout @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #8ee8b6;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #711749; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #711749; }
-    h3 { text-align: center; color: #711749; }
-    a { color: #711749; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+	<meta charset="UTF-8">
+	<title>Layout Híbrido</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	<script src="js/less-1.2.1.min.js" type="text/javascript"></script>
 </head>
-
 <body>
-  <a href="https://github.com/leobetosouza/LESS-hybrid-responsive-layout"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/leobetosouza/LESS-hybrid-responsive-layout/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/leobetosouza/LESS-hybrid-responsive-layout/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/leobetosouza/LESS-hybrid-responsive-layout">LESS-hybrid-responsive-layout</a>
-      <span class="small">by <a href="https://github.com/leobetosouza">leobetosouza</a></span></h1>
-
-    <div class="description">
-      Junt have fun with LESS and media queries
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Authors</h2>
-      <p>Leonardo Alberto Souza (leobetosouza@gmail.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Leonardo Alberto Souza (leobetosouza@gmail.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/leobetosouza/LESS-hybrid-responsive-layout/zipball/master">zip</a> or
-      <a href="https://github.com/leobetosouza/LESS-hybrid-responsive-layout/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/leobetosouza/LESS-hybrid-responsive-layout</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/leobetosouza/LESS-hybrid-responsive-layout">leobetosouza/LESS-hybrid-responsive-layout</a>
-    </div>
-
-  </div>
-
+	<header id="page_header">
+		<h1>Layout Híbrido</h1>
+	</header>
+	<div id="main" role="main">
+		<section id="content">
+			<div class="line">
+				<div class="box w50">
+					<div class="box_content">1</div>
+				</div>
+				<div class="box w50 last">
+					<div class="box_content">2</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="box w100 last">
+					<div class="box_content">3</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="box w40">
+					<div class="box_content">4</div>
+				</div>
+				<div class="box w20">
+					<div class="box_content">5</div>
+				</div>
+				<div class="box w40 last">
+					<div class="box_content">6</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="box w20">
+					<div class="box_content">7</div>
+				</div>
+				<div class="box w20">
+					<div class="box_content">8</div>
+				</div>
+				<div class="box w20">
+					<div class="box_content">9</div>
+				</div>
+				<div class="box w20">
+					<div class="box_content">10</div>
+				</div>
+				<div class="box w20 last">
+					<div class="box_content">11</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="box w25">
+					<div class="box_content">12</div>
+				</div>
+				<div class="box w50">
+					<div class="box_content">13</div>
+				</div>
+				<div class="box w25 last">
+					<div class="box_content">14</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="box w40">
+					<div class="box_content">15</div>
+				</div>
+				<div class="box w60 last">
+					<div class="box_content">16</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="box w25">
+					<div class="box_content">17</div>
+				</div>
+				<div class="box w75 last">
+					<div class="box_content">18</div>
+				</div>
+			</div>
+		</section>
+		<aside id="infos">
+			<ul class="menu">
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+				<li><a href="#">Link 4</a></li>
+				<li><a href="#">Link 5</a></li>
+				<li><a href="#">Link 6</a></li>
+				<li><a href="#">Link 7</a></li>
+				<li><a href="#">Link 8</a></li>
+			</ul>
+		</aside>
+	</div>
+	<footer id="page_footer">
+		footer
+	</footer>
 </body>
 </html>
